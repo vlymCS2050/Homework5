@@ -1,0 +1,53 @@
+3.4.1 Insert the keys E A S Y Q U T I O N in that order into an initially empty 
+table of M = 5 lists, using separate chaining.Use the hash function 11 k % M to 
+transform the kth letter of the alphabet into a table index. 
+Answer:
+  Included in a file: 341 and 3410 1st Page.jpg
+
+3.4.4 Write a program to ﬁnd values of a and M, with M as small as possible, 
+such that the hash function  (a * k) %  M  for transforming the kth letter of
+the alphabet into a table index produces distinct values (no collisions) for 
+the keys S E A R C H X M P L. The result is known as a   perfect hash function. 
+Answer:
+  Included in a file: PerfetHashFunction.java
+
+3.4.10 Insert the keys E A S Y Q U T I O N in that order into an initially empty
+table of size M =16 using linear probing. Use the hash function 11 k % M to 
+transform the kth letter of the alphabet into a table index. Redo this exercise
+for M = 10.
+Answer:
+  Included in a files: 341 and 3410 1st Page.jpg
+                3410 2nd Page.jpg
+
+3.4.22  Implement hashCode() for various types: Point2D, Interval, Interval2D,
+and Date.
+Answer:
+      Point2D
+      public int hashCode() {
+              int hashX = ((Double) x).hashCode();
+              int hashY = ((Double) y).hashCode();
+              return 31*hashX + hashY;
+          }
+
+      Interval    
+      public int hashCode() {
+              int hash1 = ((Double) min).hashCode();
+              int hash2 = ((Double) max).hashCode();
+              return 31*hash1 + hash2;
+          }
+
+      Interval2D
+      public int hashCode() {
+              int hash1 = x.hashCode();
+              int hash2 = y.hashCode();
+              return 31*hash1 + hash2;
+          }
+
+      Date
+      public int hashCode() {
+              int hash = 17;
+              hash = 31*hash + month;
+              hash = 31*hash + day;
+              hash = 31*hash + year;
+              return hash;
+          }

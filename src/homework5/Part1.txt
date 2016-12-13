@@ -1,0 +1,34 @@
+
+Repository for Homewor5
+
+https://github.com/vlymCS2050/Homework5.git
+
+3.3.1  Draw the 2-3 tree that results when you insert the keys E A S Y Q U T I O N
+in that order into an initially empty tree.
+Answer:
+  Included in a file: 331.jpg
+
+3.3.2  Draw the 2-3 tree that results when you insert the key Y L P M X H C R A E S
+in that order into an initially empty tree. 
+Answer:
+  Included in a file: 332.jpg
+
+3.3.7 Draw the diagrams like the one at the top of page 428 for the other five
+cases in the diagram at the bottom of that page.
+
+Answer:
+  Included in files: 337 Page 1.jpg, 337 Page 2.jpg, and 337 Page 3.jpg
+
+3.3.10 Draw the red-black BST that results when you insert items with the keys
+E A S Y Q U T I O N in that order into an initially empty tree.
+
+Answer:
+  Included in file: 3310.jpg
+                     
+
+3.3.19 With 1 bit per node for color, we can represent 2-, 3-, and 4-nodes.  How many hits per node would we need to represent 5-, 6-, 7-, and 8-nodes with a binary tree?
+
+Answer:
+  We would only need one bit per Node to represent any N number of nodes because this bit can indicate either red or black for the respective node or can have a field defined as Boolean and true for red and false for black.  Null links by default are black.
+
+             
